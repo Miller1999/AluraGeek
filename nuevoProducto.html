@@ -5,53 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Producto</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="contenedorHeader">
-        <div class="contenedorLogo">
-            <a href="index.html"><img src="assets/Header/Logo.png" alt="Logo"></a>
+        <div class="logoBusqueda">
+            <div class="contenedorLogo">
+                <a href="index.html"><img src="assets/Header/Logo.png" alt="Logo"></a>
+            </div>
+            <div class="busqueda">
+                <input placeholder="¿Que deseas buscar?" type="text">
+                <img src="assets/Busqueda/lupa.svg" alt="">
+            </div>
         </div>
-        <div class="busqueda">
-            <input placeholder="¿Que deseas buscar?" type="text">
-        </div>
-        <div class="MenuAdmin">
-            <button>Menu Administrador</button>
+        <div class="login">
+            <a href="Admin.html"><button>Menu Administrador</button></a>
         </div>
     </header>
-    <section>
-        <form action="">
-            <h1>Agregar nuevo producto</h1>
-            <input type="text" placeholder="URL de imagen">
-            <input type="text" placeholder="Categoria">
-            <input type="text" placeholder="Nombre del producto">
-            <input type="text" placeholder="Precio">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Descripcion del producto"></textarea>
-            <button>Agregar producto</button>
-        </form>
+    <section class="contenedorNuevoProducto">
+        <div class="contenedorFormularioNuevoProducto">
+            <form action="">
+                <h1>Agregar nuevo producto</h1>
+                <div class="espacio1">
+                    <label for="imagen">URL de imagen</label>
+                    <input name="imagen" type="text" >
+                </div>
+                <div class="espacio1">
+                    <label for="categoria">Categoria</label>
+                    <input name="categoria" type="text" >
+                </div>
+                <div class="espacio1">
+                    <label for="nombreProducto">Nombre del Producto</label>
+                    <input name="nombreProducto" type="text" >
+                </div>
+                <div class="espacio1">
+                    <label for="precio">Precio</label>
+                    <input name="precio" type="text" >
+                </div>
+                <div class="espacio2">
+                    <label for="descripcion">Despcripcion del producto</label>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="5"></textarea>
+                </div>
+                <button>Agregar producto</button>
+            </form>
+        </div>
     </section>
     <footer class="contenedorFooter">
-        <div>
-            <img src="assets/Header/Logo.png" alt="">
+        <div class="contenedor1">
+            <div>
+                <img src="assets/Header/Logo.png" alt="">
+            </div>
+            <div class="textosF">
+                <p>Quienes somos</p>
+                <p>Politica de privacidad</p>
+                <p>Programa de fidelidad</p>
+                <p>Nuestras tiendas</p>
+                <p>Quiero ser franquiciado</p>
+                <p>Anuncie aqui</p>
+            </div>
+            <div class="contenedorFormulario">
+                <p>Hable con nosotros</p>
+                <form action="" class="formulario">
+                    <div class="espacio1">
+                        <label for="name">Nombre</label>
+                        <input name="name" id="name" type="text">
+                    </div>
+                    <div class="espacio2">
+                        <label for="message">Escribe tu mensaje</label>
+                        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                    </div>
+                    <button>Enviar Mensaje</button>
+                </form>
+            </div>
         </div>
-        <div>
-            <p>Quienes somos</p>
-            <p>Politica de privacidad</p>
-            <p>Programa de fidelidad</p>
-            <p>Nuestras tiendas</p>
-            <p>Quiero ser franquiciado</p>
-            <p>Anuncie aqui</p>
-        </div>
-        <div>
-            <p>Hable con nosotros</p>
-            <label for="name">Nombre</label>
-            <input name="name" id="name" type="text">
-            <label for="message"></label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <button>Enviar Mensaje</button>
-        </div>
-        <div>
-            <p>Desarrollado por Miller Arias - 2023</p>
-        </div>
-    </footer> 
+    </footer>
+    <div class="desarrollado">
+        <p>Desarrollado por Miller Arias - 2023</p>
+    </div>
 </body>
 </html>

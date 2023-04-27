@@ -5,16 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek</title>
-    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="contenedorHeader">
-        <div class="contenedorLogo">
-            <a href="index.html"><img src="assets/Header/Logo.png" alt="Logo"></a>
-        </div>
-        <div class="busqueda">
-            <input placeholder="¿Que deseas buscar?" type="text">
+        <div class="logoBusqueda">
+            <div class="contenedorLogo">
+                <a href="index.html"><img src="assets/Header/Logo.png" alt="Logo"></a>
+            </div>
+            <div class="busqueda">
+                <input placeholder="¿Que deseas buscar?" type="text">
+                <img src="assets/Busqueda/lupa.svg" alt="">
+            </div>
         </div>
         <div class="login">
             <a href="login.html"><button>Login</button></a>
@@ -22,7 +28,7 @@
     </header>
     <section class="contenedorBanner">
         <img src="assets/banner/banner.png" alt="">
-        <div>
+        <div class="bannerTexto">
             <h1>Febrero Promocional</h1>
             <p>Productos seleccionados con 33% de descuento</p>
             <div>
@@ -31,9 +37,14 @@
         </div>
     </section>
     <section class="contenedorGalerias">
-        <div class="contenedorStarWars">
+        <div class="encabezado">
             <h3>Star Wars</h3>
-            <a href="productos.html">Ver todo</a>
+            <div class="verTodo">
+                <a href="productos.html">Ver todo</a>
+                <img src="assets/Busqueda/flecha.svg" alt="">
+            </div>
+        </div>
+        <div class="contenedor">
             <div class="tarjeta">
                 <img src="assets/StarWars/StarWars1.png" alt="">
                 <p>Producto XYZ</p>
@@ -71,9 +82,14 @@
                 <a href="">Ver producto</a>
             </div>
         </div>
-        <div class="contenedorConsolas">
+        <div class="encabezado">
             <h3>Consolas</h3>
-            <a href="productos.html">Ver todo</a>
+            <div class="verTodo">
+                <a href="productos.html">Ver todo</a>
+                <img src="assets/Busqueda/flecha.svg" alt="">
+            </div>
+        </div>
+        <div class="contenedor">
             <div class="tarjeta">
                 <img src="assets/Consolas/Consolas1.png" alt="">
                 <p>Producto XYZ</p>
@@ -111,9 +127,14 @@
                 <a href="">Ver producto</a>
             </div>
         </div>
-        <div class="contenedorVarios">
+        <div class="encabezado">
             <h3>Varios</h3>
-            <a href="productos.html">Ver todo</a>
+            <div class="verTodo">
+                <a href="productos.html">Ver todo</a>
+                <img src="assets/Busqueda/flecha.svg" alt="">
+            </div>
+        </div>
+        <div class="contenedor">
             <div class="tarjeta">
                 <img src="assets/Varios/Varios1.png" alt="">
                 <p>Producto XYZ</p>
@@ -153,28 +174,36 @@
         </div>
     </section>
     <footer class="contenedorFooter">
-        <div>
-            <img src="assets/Header/Logo.png" alt="">
-        </div>
-        <div>
-            <p>Quienes somos</p>
-            <p>Politica de privacidad</p>
-            <p>Programa de fidelidad</p>
-            <p>Nuestras tiendas</p>
-            <p>Quiero ser franquiciado</p>
-            <p>Anuncie aqui</p>
-        </div>
-        <div>
-            <p>Hable con nosotros</p>
-            <label for="name">Nombre</label>
-            <input name="name" id="name" type="text">
-            <label for="message"></label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <button>Enviar Mensaje</button>
-        </div>
-        <div>
-            <p>Desarrollado por Miller Arias - 2023</p>
+        <div class="contenedor1">
+            <div>
+                <img src="assets/Header/Logo.png" alt="">
+            </div>
+            <div class="textosF">
+                <p>Quienes somos</p>
+                <p>Politica de privacidad</p>
+                <p>Programa de fidelidad</p>
+                <p>Nuestras tiendas</p>
+                <p>Quiero ser franquiciado</p>
+                <p>Anuncie aqui</p>
+            </div>
+            <div class="contenedorFormulario">
+                <p>Hable con nosotros</p>
+                <form action="" class="formulario">
+                    <div class="espacio1">
+                        <label for="name">Nombre</label>
+                        <input name="name" id="name" type="text">
+                    </div>
+                    <div class="espacio2">
+                        <label for="message">Escribe tu mensaje</label>
+                        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                    </div>
+                    <button>Enviar Mensaje</button>
+                </form>
+            </div>
         </div>
     </footer>
+    <div class="desarrollado">
+        <p>Desarrollado por Miller Arias - 2023</p>
+    </div>
 </body>
 </html>

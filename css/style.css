@@ -1,0 +1,347 @@
+/*Principal*/
+:root{
+    --lgray: #A2A2A2;
+    --dwhite: #f5f5f5;
+    --blue: #2A7AE4;
+    --bluec: #498EE9;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    width: 1440px;
+    background-color: white;
+}
+.contenedorHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 32px 0px;
+}
+.logoBusqueda{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 393px;
+    border-radius: 10px;
+    background-color: var(--dwhite);
+    padding: 8px 16px;
+}
+.busqueda input{
+    width: 329px;
+    background-color: var(--dwhite);
+    color: var(--lgray);
+    border: none;
+    height: 16px;
+}
+.busqueda input:focus{
+    outline: none;
+}
+.login{
+    margin-left: 50px;
+}
+.login button{
+    width: 182px;
+    height: 51px;
+    background-color: white;
+    border: var(--blue) 1px solid;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--blue);
+    border-radius: 20px;
+    transition: all .5s ;
+}
+.login button:hover{
+    cursor: pointer;
+    background-color: var(--blue);
+    color: white;
+    
+}
+.contenedorBanner{
+    position: relative;
+    width: 80%;
+}
+.bannerTexto{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    top: 150px;
+    left: 152px;
+    color: white;
+    font-weight: 700;
+}
+.bannerTexto h1{
+    font-size: 52px;
+}
+.bannerTexto p{
+    font-size: 22px;
+    line-height: 26px;
+}
+.bannerTexto button{
+    width: 129px;
+    height: 51px;
+    font-size: 16px;
+    font-weight: 200;
+    background-color: var(--blue);
+    border: none;
+    color: white;
+    transition: all 0.5s;
+}
+.bannerTexto button:hover{
+    cursor: pointer;
+    background-color: var(--bluec);
+    transform: scale(1.05);
+}
+.contenedorGalerias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+.encabezado{
+    display: flex;
+    width: 80%;
+    gap: 900px;
+    font-weight: 700;
+    margin: 30px 0px;
+    padding-left: 20px;
+}
+.encabezado h3{
+    font-size: 32px;
+    color: #464646;
+    width: 150px;
+}
+.verTodo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.verTodo a{
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 16px;
+}
+.contenedor{
+    display: flex;
+    gap: 16px;
+}
+.tarjeta{
+    width: 176px;
+    height: 252px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+.tarjeta p{
+    color: #464646;
+}
+.tarjeta p:last-of-type{
+    font-weight: 700;
+}
+.tarjeta a{
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 700;
+}
+.contenedorFooter{
+    display:flex;
+    justify-content: center;
+    background-color: #EAF2FD;
+    margin-bottom: 32px;
+    padding: 50px;
+}
+.contenedor1{
+    display: flex;
+    width: 80%;
+    gap: 150px;
+}
+.textosF{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+}
+.contenedorFormulario{
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 1.2;
+    gap: 10px;
+}
+.contenedorFormulario p{
+    font-weight: 700;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+}
+.espacio1, .espacio2{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    gap: 5px;
+}
+.espacio1 label, .espacio2 label{
+    color: #A2A2A2;
+    font-size: 12px;
+}
+.espacio1 input{
+    border: none;
+}
+.espacio1 input:focus{
+    outline: none;
+}
+.espacio2 textarea{
+    border: none;
+}
+.espacio2 textarea:focus{
+    outline: none;
+}
+.formulario button{
+    width: 144px;
+    height: 51px;
+    border: none;
+    color: white;
+    background-color: #2A7AE4;
+    transition: all 0.5s;
+}
+.formulario button:hover{
+    cursor: pointer;
+    background-color: #498EE9;
+}
+.desarrollado{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px;
+}
+/*Principal*/
+/*Login*/
+.contenedorLogin{
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formularioLogin{
+    display: flex;
+    flex-direction: column;
+    padding: 92px 0px;
+    gap: 25px;
+    text-align: center;
+}
+.formularioLogin h1{
+    font-weight: 700;
+}
+.formularioLogin input{
+    width: 423px;
+    height: 43px;
+    padding: 10px;
+    border: none;
+}
+.formularioLogin input:focus{
+    outline: none;
+}
+.formularioLogin button{
+    background-color: #2A7AE4;
+    height: 51px;
+    border: none;
+    color: white;
+    transition: all 0.5s;
+}
+.formularioLogin button:hover{
+    background-color: #498EE9;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+/*Login*/
+/*Productos*/
+.contenedorProGrande{
+    background-color: #E5E5E5; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedorProductos{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 25px 50px;
+}
+.contenedorIconos{
+    display: flex;
+    position: absolute;
+    right: 0px;
+}
+.iconos, .iconos1{
+    width: 24px;
+}
+.encabezadoTP{
+    display: flex;
+    width: 80%;
+    gap: 675px;
+    padding-top: 25px;
+    align-items: center;
+}
+.encabezadoTP h1{
+    font-weight: 700;
+    font-size: 32px;
+}
+.encabezadoTP button{
+    height: 51px;
+    width: 163px;
+    color: white;
+    background-color: #2A7AE4;
+    border: none;
+    transition: all 0.5s;
+}
+.encabezadoTP button:hover{
+    background-color: #498EE9;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+/*Producots*/
+/*NuevoProducto*/
+.contenedorNuevoProducto{
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorFormularioNuevoProducto{
+    padding: 64px;
+}
+.contenedorFormularioNuevoProducto h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+.contenedorFormularioNuevoProducto form{
+    display: flex;
+    flex-direction: column;
+    width: 559px;
+    gap: 16px;
+}
+.contenedorFormularioNuevoProducto button{
+    height: 51px;
+    background-color: #2A7AE4;
+    color: white;
+    border: none;
+}
+.contenedorFormularioNuevoProducto button:hover{
+    background-color: #498EE9;
+}
