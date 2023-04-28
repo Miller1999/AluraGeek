@@ -216,9 +216,18 @@ body{
     background-color: #2A7AE4;
     transition: all 0.5s;
 }
+.espacio-incorrecto{
+    border: 1px red solid;
+}
+.espacio-incorrecto label{
+    color: red;
+}
 .formulario button:hover{
     cursor: pointer;
     background-color: #498EE9;
+}
+.formulario button:disabled{
+    background-color: #A2A2A2;
 }
 .desarrollado{
     display: flex;
