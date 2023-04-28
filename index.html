@@ -32,7 +32,7 @@
             <h1>Febrero Promocional</h1>
             <p>Productos seleccionados con 33% de descuento</p>
             <div>
-                <button> Ver consolas </button>
+                <a href="#consolas"><button> Ver consolas </button></a>
             </div>
         </div>
     </section>
@@ -89,7 +89,7 @@
                 <img src="assets/Busqueda/flecha.svg" alt="">
             </div>
         </div>
-        <div class="contenedor">
+        <div class="contenedor" id="consolas">
             <div class="tarjeta">
                 <img src="assets/Consolas/Consolas1.png" alt="">
                 <p>Producto XYZ</p>
@@ -188,14 +188,14 @@
             </div>
             <div class="contenedorFormulario">
                 <p>Hable con nosotros</p>
-                <form action="" class="formulario">
+                <form action="" class="formulario" id="formularioHableConNosotros">
                     <div class="espacio1">
                         <label for="name">Nombre</label>
-                        <input name="name" id="name" type="text">
+                        <input name="name" id="name" type="text" required>
                     </div>
                     <div class="espacio2">
                         <label for="message">Escribe tu mensaje</label>
-                        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="5" required></textarea>
                     </div>
                     <button>Enviar Mensaje</button>
                 </form>
@@ -205,5 +205,6 @@
     <div class="desarrollado">
         <p>Desarrollado por Miller Arias - 2023</p>
     </div>
+    <script src="js/formularioHableConNosotros.js"></script>
 </body>
 </html>
