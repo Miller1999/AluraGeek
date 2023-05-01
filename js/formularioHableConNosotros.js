@@ -36,7 +36,6 @@ const validarFormulario = (e) => {
 const validarCampo = (expresion,input,campo) => {
     if(expresion.test(input.value)){
         document.getElementById(`formulario-${campo}`).classList.remove("espacio-incorrecto")
-        console.log(document.getElementById(`formulario-${campo}`))
         campos[campo] = true
     }
     else{

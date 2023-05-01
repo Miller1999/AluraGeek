@@ -261,6 +261,9 @@ body{
     padding: 10px;
     border: none;
 }
+.formularioLogin-incorrecto input{
+    border: 1px solid red;
+}
 .formularioLogin input:focus{
     outline: none;
 }
@@ -275,6 +278,12 @@ body{
     background-color: #498EE9;
     transform: scale(1.03);
     cursor: pointer;
+}
+.mensaje-acceso{
+    display: none;
+}
+.acceso-denegado{
+    color: red;
 }
 /*Login*/
 /*Productos*/
