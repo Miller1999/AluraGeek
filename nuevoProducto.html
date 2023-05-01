@@ -32,20 +32,28 @@
                 <h1>Agregar nuevo producto</h1>
                 <div class="contenedorSubirImagenes">
                     <div class="espacio1" id="formulario-urlImagen">
-                        <label for="imagen">URL de imagen</label>
-                        <input name="urlImagen" type="url" id="URL">
-                    </div>
+                        <label for="imagen">Imagen del producto</label>
+                    
                     <div class="contenedorFile" id="formulario-imagen">
                         <button><span>Subir archivo</span><input type="file" accept="image/*" class="subirImagen" id="file" name="imagen"></button>
                     </div>
                 </div>
+                </div>
+                <div class="espacio1" id="formulario-categoria">
+                    <label for="categoria">Categoria</label>
+                    <select name="categoria" id="categoria">
+                        <option value="StarWars">StarWars</option>
+                        <option value="Consolas">Consolas</option>
+                        <option value="Varios">Varios</option>
+                    </select>
+                </div>
                 <div class="espacio1" id="formulario-nombreProducto">
                     <label for="nombreProducto">Nombre del Producto</label>
-                    <input name="nombreProducto" type="text" required maxlength="20">
+                    <input name="nombreProducto" id="nombreProducto" type="text" required maxlength="20">
                 </div>
                 <div class="espacio1" id="formulario-precio">
                     <label for="precio">Precio</label>
-                    <input name="precio" type="number" required >
+                    <input name="precio" id="precio" type="number" required >
                 </div>
                 <div class="espacio2" id="formulario-descripcion">
                     <label for="descripcion">Despcripcion del producto</label>
@@ -89,5 +97,7 @@
     </div>
     <script src="js/formularioHableConNosotros.js"></script>
     <script src="js/nuevoProducto.js"></script>
+    <script type="module" src="controllers/registro.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

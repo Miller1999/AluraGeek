@@ -298,7 +298,7 @@ body{
     width: 80%;
     flex-wrap: wrap;
     gap: 16px;
-    padding: 25px 50px;
+    padding: 50px 50px;
 }
 .contenedorIconos{
     display: flex;
@@ -367,18 +367,24 @@ body{
 .contenedorSubirImagenes{
     display: flex;
     align-items: center;
-    gap: 15px;
-}
-#URL{
-    width: 300px;
 }
 #file{
-    width: 200px;
+    width: 100px;
     opacity: 0;
+}
+#file input{
+    position: relative;
+}
+#formulario-urlImagen{
+    width: 550px;
+}
+.espacio1 select{
+    outline: none;
+    border: 1px white solid;
 }
 .contenedorFile span{
     position: relative;
-    top: 10px;
+    right: -45px;
 }
 .contenedorFormularioNuevoProducto button:disabled{
     background-color: #A2A2A2;

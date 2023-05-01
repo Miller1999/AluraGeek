@@ -1,5 +1,12 @@
 {
-  "profile": {
-    "name": "typicode"
-  }
+  "producto": [
+    {
+      "Producto": "Taza de StormTrooper",
+      "Precio": "20",
+      "Categoria": "StarWars",
+      "Imagen": "assets/StarWars1.png",
+      "descripcion": "Taza decorativa edición especial de stormtrooper",
+      "id": "58a84867-0359-4ea8-aaf1-21d61d027d63"
+    }
+  ]
 }

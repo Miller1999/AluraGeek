@@ -1,12 +1,13 @@
 const formularioNuevo = document.getElementById("formulario-Nuevo-Producto")
 const inputsN = document.querySelectorAll("#formulario-Nuevo-Producto input")
 const textareaN = document.querySelectorAll("#formulario-Nuevo-Producto textarea")
+const select = document.querySelectorAll("#formulario-Nuevo-Producto select")
 const botonNuevo = document.getElementById("nuevoProducto")
 botonNuevo.disabled = true
 
 const camposN = {
-    urlImagen: false,
     imagen: false,
+    categoria: false,
     nombreProducto: false,
     precio: false,
     descripcion: false
@@ -14,10 +15,6 @@ const camposN = {
 
 const validarFormularioN = (e) => {
     switch(e.target.name){
-        case "urlImagen":
-            validarCampoN(e.target,"urlImagen")
-            validarBoton()
-            break
         case "imagen":
             validarCampoN(e.target,"imagen")
             validarBoton()
@@ -66,7 +63,7 @@ inputsN.forEach((input)=>{
 })
 
 function validarBoton(){
-    if((camposN.urlImagen || camposN.imagen) && camposN.nombreProducto && camposN.precio && camposN.descripcion ){
+    if(camposN.imagen && camposN.nombreProducto && camposN.precio && camposN.descripcion ){
         botonNuevo.disabled = false
     }
     else{
@@ -76,6 +73,6 @@ function validarBoton(){
 
 formularioNuevo.addEventListener('submit',(e)=>{
     e.preventDefault()
-    if((camposN.urlImagen || camposN.imagen) && camposN.nombreProducto && camposN.precio && camposN.descripcion )
-        formularioNuevo.reset()
+    // if(camposN.imagen && camposN.nombreProducto && camposN.precio && camposN.descripcion )
+    //     window.location.href = "Admin.html"
 })
