@@ -28,29 +28,30 @@
     </header>
     <section class="contenedorNuevoProducto">
         <div class="contenedorFormularioNuevoProducto">
-            <form action="">
+            <form action="" id="formulario-Nuevo-Producto">
                 <h1>Agregar nuevo producto</h1>
-                <div class="espacio1">
-                    <label for="imagen">URL de imagen</label>
-                    <input name="imagen" type="text" >
+                <div class="contenedorSubirImagenes">
+                    <div class="espacio1" id="formulario-urlImagen">
+                        <label for="imagen">URL de imagen</label>
+                        <input name="urlImagen" type="url" id="URL">
+                    </div>
+                    <div class="contenedorFile" id="formulario-imagen">
+                        <button><span>Subir archivo</span><input type="file" accept="image/*" class="subirImagen" id="file" name="imagen"></button>
+                    </div>
                 </div>
-                <div class="espacio1">
-                    <label for="categoria">Categoria</label>
-                    <input name="categoria" type="text" >
-                </div>
-                <div class="espacio1">
+                <div class="espacio1" id="formulario-nombreProducto">
                     <label for="nombreProducto">Nombre del Producto</label>
-                    <input name="nombreProducto" type="text" >
+                    <input name="nombreProducto" type="text" required maxlength="20">
                 </div>
-                <div class="espacio1">
+                <div class="espacio1" id="formulario-precio">
                     <label for="precio">Precio</label>
-                    <input name="precio" type="text" >
+                    <input name="precio" type="number" required >
                 </div>
-                <div class="espacio2">
+                <div class="espacio2" id="formulario-descripcion">
                     <label for="descripcion">Despcripcion del producto</label>
-                    <textarea name="descripcion" id="descripcion" cols="30" rows="5"></textarea>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="5" required maxlength="150"></textarea>
                 </div>
-                <button>Agregar producto</button>
+                <button id="nuevoProducto" type="submit">Agregar producto</button>
             </form>
         </div>
     </section>
@@ -69,16 +70,16 @@
             </div>
             <div class="contenedorFormulario">
                 <p>Hable con nosotros</p>
-                <form action="" class="formulario">
-                    <div class="espacio1">
-                        <label for="name">Nombre</label>
-                        <input name="name" id="name" type="text">
+                <form action="" class="formulario" id="formularioHableConNosotros">
+                    <div class="espacio1" id="formulario-nombre">
+                        <label for="nombre">Nombre</label>
+                        <input name="nombre" id="nombre" type="text" required pattern="^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$" title="No puede contener numeros ni simbolos y tampoco puede estar vacio">
                     </div>
-                    <div class="espacio2">
-                        <label for="message">Escribe tu mensaje</label>
-                        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                    <div class="espacio2" id="formulario-mensaje">
+                        <label for="mensaje">Escribe tu mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="5" required pattern="^[A-ZÑa-zñ0-9áéíóúÁÉÍÓÚ'° ]+$" title="No puede estar vacio"></textarea>
                     </div>
-                    <button>Enviar Mensaje</button>
+                    <button type="submit" id="enviar">Enviar Mensaje</button>
                 </form>
             </div>
         </div>
@@ -86,5 +87,7 @@
     <div class="desarrollado">
         <p>Desarrollado por Miller Arias - 2023</p>
     </div>
+    <script src="js/formularioHableConNosotros.js"></script>
+    <script src="js/nuevoProducto.js"></script>
 </body>
 </html>

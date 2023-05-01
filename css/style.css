@@ -359,7 +359,27 @@ body{
     background-color: #2A7AE4;
     color: white;
     border: none;
+    transition: all 0.5s;
 }
 .contenedorFormularioNuevoProducto button:hover{
     background-color: #498EE9;
+}
+.contenedorSubirImagenes{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#URL{
+    width: 300px;
+}
+#file{
+    width: 200px;
+    opacity: 0;
+}
+.contenedorFile span{
+    position: relative;
+    top: 10px;
+}
+.contenedorFormularioNuevoProducto button:disabled{
+    background-color: #A2A2A2;
 }
