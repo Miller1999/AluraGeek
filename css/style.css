@@ -131,7 +131,9 @@ body{
 }
 .contenedor{
     display: flex;
+    width: 80%;
     gap: 16px;
+    flex-wrap: wrap;
 }
 .tarjeta{
     width: 176px;
@@ -307,6 +309,13 @@ body{
 }
 .iconos, .iconos1{
     width: 24px;
+}
+.contenedorIconos button{
+    background-color: transparent;
+    border: none;
+}
+.contenedorIconos button:hover{
+    cursor: pointer;
 }
 .encabezadoTP{
     display: flex;

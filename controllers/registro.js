@@ -9,10 +9,8 @@ formularioNP.addEventListener("submit", () =>{
     const Precio = document.getElementById("precio").value
     const descripcion = document.getElementById("descripcion").value
 
-    console.log( file, " - ",nombre," - ",precio," - ",descripcion)
 
     serviciosProductos.crearProducto(Producto,Precio,Categoria,`assets/${Imagen}`,descripcion).then( respuesta =>{
-        console.log(respuesta)
     })
 })
 

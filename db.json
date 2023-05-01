@@ -7,6 +7,46 @@
       "Imagen": "assets/StarWars1.png",
       "descripcion": "Taza decorativa edición especial de stormtrooper",
       "id": "58a84867-0359-4ea8-aaf1-21d61d027d63"
+    },
+    {
+      "Producto": "Control Xbox One ",
+      "Precio": "50",
+      "Categoria": "Consolas",
+      "Imagen": "assets/Consolas1.png",
+      "descripcion": "Control inalámbrico de Xbox One blanco",
+      "id": "a36ca92c-9a65-4e8b-be8a-c932b25922b7"
+    },
+    {
+      "Producto": "Poster de Atari",
+      "Precio": "10",
+      "Categoria": "Varios",
+      "Imagen": "assets/Varios1.png",
+      "descripcion": "Poster conmemorativo de atari",
+      "id": "88f7a701-75a4-4537-9955-6483ae3f4563"
+    },
+    {
+      "Producto": "Baby Yoda",
+      "Precio": "80",
+      "Categoria": "StarWars",
+      "Imagen": "assets/StarWars5.png",
+      "descripcion": "Lo mas tierno del mundo",
+      "id": "3aa1e1f0-185a-4c27-bd66-8503914bb432"
+    },
+    {
+      "Producto": "Pikachu Gigante",
+      "Precio": "200",
+      "Categoria": "Varios",
+      "Imagen": "assets/Varios6.png",
+      "descripcion": "Pikachu tamaño familiar",
+      "id": "fb5f0dd8-1d75-4271-b583-64d645b925f2"
+    },
+    {
+      "Producto": "Play Station 5",
+      "Precio": "500",
+      "Categoria": "Consolas",
+      "Imagen": "assets/Consolas2.png",
+      "descripcion": "Play Station 5 de ultima generación",
+      "id": "ca5a8de3-39f7-4f3a-83c2-f3d8f3070462"
     }
   ]
 }
