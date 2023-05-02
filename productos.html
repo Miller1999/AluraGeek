@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/Header/loguito.ico">
 </head>
 <body>
     <header class="contenedorHeader">
@@ -18,8 +19,10 @@
                 <a href="index.html"><img src="assets/Header/Logo.png" alt="Logo"></a>
             </div>
             <div class="busqueda">
-                <input placeholder="¿Que deseas buscar?" type="text">
-                <img src="assets/Busqueda/lupa.svg" alt="">
+                <form action="" id="formulario-busqueda">
+                    <input placeholder="¿Que deseas buscar?" type="text">
+                    <button type="submit"><img src="assets/Busqueda/lupa.svg" alt=""></button>
+                </form>
             </div>
         </div>
     </header>
@@ -66,5 +69,6 @@
         </div>
         <script src="js/formularioHableConNosotros.js"></script>
         <script type="module" src="controllers/clientes.js"></script>
+        <script type="module" src="controllers/busqueda.js"></script>
 </body>
 </html>

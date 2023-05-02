@@ -27,7 +27,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 393px;
     border-radius: 10px;
     background-color: var(--dwhite);
     padding: 8px 16px;
@@ -38,9 +37,20 @@ body{
     color: var(--lgray);
     border: none;
     height: 16px;
+    position: relative;
+    top: -5px;
 }
 .busqueda input:focus{
     outline: none;
+}
+.busqueda button{
+    border: none;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+}
+.busqueda button:hover{
+    cursor: pointer;
 }
 .login{
     margin-left: 50px;
@@ -400,3 +410,4 @@ body{
 .contenedorFormularioNuevoProducto button:disabled{
     background-color: #A2A2A2;
 }
+/*Info adicional*/

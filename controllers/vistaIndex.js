@@ -1,12 +1,12 @@
 import { serviciosProductos } from "../services/cliente.js";
 
-const crearNuevaTarjera = (imagen,producto,precio) => {
+const crearNuevaTarjera = (imagen,producto,precio,id) => {
     const tarjetaI = document.createElement("div")
     tarjetaI.classList.add("tarjeta")
     const contenido = `<img src="${imagen}" alt="">
     <p >${producto}</p>
     <p>$${precio}</p>
-    <a href="">Ver producto</a>`
+    <a href="productos.html?id=${id}">Ver producto</a>`
     tarjetaI.innerHTML = contenido
     return tarjetaI
 }
@@ -21,15 +21,15 @@ serviciosProductos.listaProductos()
     const contenidoC = data.filter(producto => producto.Categoria == "Consolas")
     const contenidoV = data.filter(producto => producto.Categoria == "Varios" )
     contenidoS.forEach(producto => {
-        const nuevaTarjeta = crearNuevaTarjera(producto.Imagen, producto.Producto, producto.Precio)
+        const nuevaTarjeta = crearNuevaTarjera(producto.Imagen, producto.Producto, producto.Precio,producto.id)
         contenedorS.appendChild(nuevaTarjeta)
     })
     contenidoC.forEach(producto => {
-        const nuevaTarjeta = crearNuevaTarjera(producto.Imagen, producto.Producto, producto.Precio)
+        const nuevaTarjeta = crearNuevaTarjera(producto.Imagen, producto.Producto, producto.Precio,producto.id)
         contenedorC.appendChild(nuevaTarjeta)
     })
     contenidoV.forEach(producto => {
-        const nuevaTarjeta = crearNuevaTarjera(producto.Imagen, producto.Producto, producto.Precio)
+        const nuevaTarjeta = crearNuevaTarjera(producto.Imagen, producto.Producto, producto.Precio,producto.id)
         contenedorV.appendChild(nuevaTarjeta)
     })
 })

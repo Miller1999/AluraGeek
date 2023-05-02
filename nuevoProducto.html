@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar Producto</title>
+    <title>Nuevo Producto</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/Header/loguito.ico">
 </head>
 <body>
     <header class="contenedorHeader">
@@ -18,8 +19,10 @@
                 <a href="index.html"><img src="assets/Header/Logo.png" alt="Logo"></a>
             </div>
             <div class="busqueda">
-                <input placeholder="¿Que deseas buscar?" type="text">
-                <img src="assets/Busqueda/lupa.svg" alt="">
+                <form action="" id="formulario-busqueda">
+                    <input placeholder="¿Que deseas buscar?" type="text">
+                    <button type="submit"><img src="assets/Busqueda/lupa.svg" alt=""></button>
+                </form>
             </div>
         </div>
         <div class="login">
@@ -98,5 +101,6 @@
     <script src="js/nuevoProducto.js"></script>
     <script type="module" src="controllers/registro.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="controllers/busqueda.js"></script>
 </body>
 </html>

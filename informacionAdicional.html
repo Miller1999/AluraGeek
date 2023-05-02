@@ -1,23 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Información adicional</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/Header/loguito.ico">
 </head>
 <body>
     <header class="contenedorHeader">
-        <div class="contenedorLogo">
-            <a href="index.html"><img src="assets/Header/Logo.png" alt="Logo"></a>
+        <div class="logoBusqueda">
+            <div class="contenedorLogo">
+                <a href="index.html"><img src="assets/Header/Logo.png" alt="Logo"></a>
+            </div>
+            <div class="busqueda">
+                <form action="" id="formulario-busqueda">
+                    <input placeholder="¿Que deseas buscar?" type="text">
+                    <button type="submit"><img src="assets/Busqueda/lupa.svg" alt=""></button>
+                </form>
+            </div>
         </div>
-        <div class="busqueda">
-            <input placeholder="¿Que deseas buscar?" type="text">
+        <div class="login">
+            <a href="login.html"><button>Login</button></a>
         </div>
     </header>
-    <section>
+    <section class="contenedorGrandeInfo">
         <div>
-            <img src="assets/StarWars/StarWars1.png" alt="">
+            <img src="assets/StarWars1.png" alt="">
         </div>
         <div>
             <h1>Producto XYZ</h1>
@@ -27,7 +41,7 @@
     </section>
     <section>
         <div>
-            <h1></h1>
+            <h1>Productos Relacionados</h1>
             <div>
                 <div class="tarjeta">
                     <img src="assets/StarWars/StarWars1.png" alt="">
@@ -69,28 +83,37 @@
         </div>
     </section>
     <footer class="contenedorFooter">
-        <div>
-            <img src="assets/Header/Logo.png" alt="">
-        </div>
-        <div>
-            <p>Quienes somos</p>
-            <p>Politica de privacidad</p>
-            <p>Programa de fidelidad</p>
-            <p>Nuestras tiendas</p>
-            <p>Quiero ser franquiciado</p>
-            <p>Anuncie aqui</p>
-        </div>
-        <div>
-            <p>Hable con nosotros</p>
-            <label for="name">Nombre</label>
-            <input name="name" id="name" type="text">
-            <label for="message"></label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <button>Enviar Mensaje</button>
-        </div>
-        <div>
-            <p>Desarrollado por Miller Arias - 2023</p>
+        <div class="contenedor1">
+            <div>
+                <img src="assets/Header/Logo.png" alt="">
+            </div>
+            <div class="textosF">
+                <p>Quienes somos</p>
+                <p>Politica de privacidad</p>
+                <p>Programa de fidelidad</p>
+                <p>Nuestras tiendas</p>
+                <p>Quiero ser franquiciado</p>
+                <p>Anuncie aqui</p>
+            </div>
+            <div class="contenedorFormulario">
+                <p>Hable con nosotros</p>
+                <form action="" class="formulario" id="formularioHableConNosotros">
+                    <div class="espacio1" id="formulario-nombre">
+                        <label for="nombre">Nombre</label>
+                        <input name="nombre" id="nombre" type="text" required pattern="^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$" title="No puede contener numeros ni simbolos y tampoco puede estar vacio">
+                    </div>
+                    <div class="espacio2" id="formulario-mensaje">
+                        <label for="mensaje">Escribe tu mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="5" required pattern="^[A-ZÑa-zñ0-9áéíóúÁÉÍÓÚ'° ]+$" title="No puede estar vacio"></textarea>
+                    </div>
+                    <button type="submit" id="enviar">Enviar Mensaje</button>
+                </form>
+            </div>
         </div>
     </footer>
+    <div class="desarrollado">
+        <p>Desarrollado por Miller Arias - 2023</p>
+    </div>
+    <script type="module" src="controllers/busqueda.js"></script>
 </body>
 </html>

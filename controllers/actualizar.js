@@ -10,7 +10,6 @@ const obtenerInformacion = () => {
     const Precio = document.getElementById("precio")
     const descripcion = document.getElementById("descripcion")
 
-
     serviciosProductos.detalleProducto(id).then( producto => {
         Categoria.value = producto.Categoria
         Producto.value = producto.Producto
