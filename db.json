@@ -2,18 +2,18 @@
   "producto": [
     {
       "Producto": "Taza de StormTrooper",
-      "Precio": "20",
+      "Precio": "200",
       "Categoria": "StarWars",
       "Imagen": "assets/StarWars1.png",
       "descripcion": "Taza decorativa edición especial de stormtrooper",
       "id": "58a84867-0359-4ea8-aaf1-21d61d027d63"
     },
     {
-      "Producto": "Control Xbox One ",
-      "Precio": "50",
+      "Producto": "Control Switch",
+      "Precio": "600",
       "Categoria": "Consolas",
-      "Imagen": "assets/Consolas1.png",
-      "descripcion": "Control inalámbrico de Xbox One blanco",
+      "Imagen": "assets/Consolas3.png",
+      "descripcion": "Control inalámbrico de Switch Rojo/Azul",
       "id": "a36ca92c-9a65-4e8b-be8a-c932b25922b7"
     },
     {
@@ -25,11 +25,11 @@
       "id": "88f7a701-75a4-4537-9955-6483ae3f4563"
     },
     {
-      "Producto": "Baby Yoda",
-      "Precio": "80",
+      "Producto": "Yoda",
+      "Precio": "60",
       "Categoria": "StarWars",
-      "Imagen": "assets/StarWars5.png",
-      "descripcion": "Lo mas tierno del mundo",
+      "Imagen": "assets/StarWars3.png",
+      "descripcion": "Lo mas viejo",
       "id": "3aa1e1f0-185a-4c27-bd66-8503914bb432"
     },
     {

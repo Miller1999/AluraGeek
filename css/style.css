@@ -142,6 +142,7 @@ body{
     flex-direction: column;
     gap: 8px;
     position: relative;
+    margin-bottom: 30px;
 }
 .tarjeta p{
     color: #464646;
@@ -302,6 +303,7 @@ body{
     gap: 16px;
     padding: 50px 50px;
 }
+
 .contenedorIconos{
     display: flex;
     position: absolute;
