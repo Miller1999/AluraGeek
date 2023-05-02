@@ -5,7 +5,7 @@ const crearNuevoTarjetaA = (imagen,producto,categoria,precio,id) => {
     tarjetaA.classList.add("tarjeta")
     const contenido = `<img src="${imagen}" alt="">
     <div class="contenedorIconos">
-    <img src="assets/Busqueda/edit.svg" alt="" class="iconos1">
+    <a href="../editarProducto.html?id=${id}"><img src="assets/Busqueda/edit.svg" alt="" class="iconos1"></a>
     <button id=${id}><img src="assets/Busqueda/delete.svg" alt="" class="iconos"></button>
     </div>
     <p>${categoria}</p>

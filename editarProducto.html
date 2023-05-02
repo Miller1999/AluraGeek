@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Producto</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="contenedorHeader">
+        <div class="logoBusqueda">
+            <div class="contenedorLogo">
+                <a href="index.html"><img src="assets/Header/Logo.png" alt="Logo"></a>
+            </div>
+            <div class="busqueda">
+                <input placeholder="¿Que deseas buscar?" type="text">
+                <img src="assets/Busqueda/lupa.svg" alt="">
+            </div>
+        </div>
+        <div class="login">
+            <a href="Admin.html"><button>Menu Administrador</button></a>
+        </div>
+    </header>
+    <section class="contenedorNuevoProducto">
+        <div class="contenedorFormularioNuevoProducto">
+            <form action="" id="formulario-Nuevo-Producto">
+                <h1>Editar nuevo producto</h1>
+                <div class="espacio1" id="formulario-categoria">
+                    <label for="categoria">Categoria</label>
+                    <select name="categoria" id="categoria">
+                        <option value="StarWars">StarWars</option>
+                        <option value="Consolas">Consolas</option>
+                        <option value="Varios">Varios</option>
+                    </select>
+                </div>
+                <div class="espacio1" id="formulario-nombreProducto">
+                    <label for="nombreProducto">Nombre del Producto</label>
+                    <input name="nombreProducto" id="nombreProducto" type="text" required maxlength="20">
+                </div>
+                <div class="espacio1" id="formulario-precio">
+                    <label for="precio">Precio</label>
+                    <input name="precio" id="precio" type="number" required >
+                </div>
+                <div class="espacio2" id="formulario-descripcion">
+                    <label for="descripcion">Despcripcion del producto</label>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="5" required maxlength="150"></textarea>
+                </div>
+                <button id="nuevoProducto" type="submit">Agregar producto</button>
+            </form>
+        </div>
+    </section>
+    <footer class="contenedorFooter">
+        <div class="contenedor1">
+            <div>
+                <img src="assets/Header/Logo.png" alt="">
+            </div>
+            <div class="textosF">
+                <p>Quienes somos</p>
+                <p>Politica de privacidad</p>
+                <p>Programa de fidelidad</p>
+                <p>Nuestras tiendas</p>
+                <p>Quiero ser franquiciado</p>
+                <p>Anuncie aqui</p>
+            </div>
+            <div class="contenedorFormulario">
+                <p>Hable con nosotros</p>
+                <form action="" class="formulario" id="formularioHableConNosotros">
+                    <div class="espacio1" id="formulario-nombre">
+                        <label for="nombre">Nombre</label>
+                        <input name="nombre" id="nombre" type="text" required pattern="^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$" title="No puede contener numeros ni simbolos y tampoco puede estar vacio">
+                    </div>
+                    <div class="espacio2" id="formulario-mensaje">
+                        <label for="mensaje">Escribe tu mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="5" required pattern="^[A-ZÑa-zñ0-9áéíóúÁÉÍÓÚ'° ]+$" title="No puede estar vacio"></textarea>
+                    </div>
+                    <button type="submit" id="enviar">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <div class="desarrollado">
+        <p>Desarrollado por Miller Arias - 2023</p>
+    </div>
+    <script src="js/formularioHableConNosotros.js"></script>
+    <script type="module" src="/controllers/actualizar.js"></script>
+</body>
+</html>
