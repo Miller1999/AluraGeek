@@ -8,7 +8,6 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    width: 1440px;
     background-color: white;
 }
 .contenedorHeader{
@@ -390,7 +389,7 @@ body{
     align-items: center;
 }
 #file{
-    width: 100px;
+    width: 500px;
     opacity: 0;
 }
 #file input{
@@ -405,9 +404,170 @@ body{
 }
 .contenedorFile span{
     position: relative;
-    right: -45px;
+    right: 0px;
+    top: 10px;
 }
 .contenedorFormularioNuevoProducto button:disabled{
     background-color: #A2A2A2;
 }
 /*Info adicional*/
+/*Responsividad*/
+@media only screen and (max-width: 425px){
+    /*Principal*/
+    .contenedorHeader{
+        flex-wrap: wrap;
+    }
+    .logoBusqueda{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .busqueda input{
+        width: 100px;
+    }
+    .login{
+        margin-left: 10px;
+    }
+    .contenedorBanner img{
+        max-width: 425px;
+        height: 200px;
+    }
+    .bannerTexto{
+        top: 60px;
+        left: 12px;
+    }
+    .bannerTexto h1{
+        font-size: 22px;
+    }
+    .bannerTexto p{
+        font-size: 14px;
+    }
+    .bannerTexto button{
+        width: 80px;
+        height: 25px;
+        font-size: 10px;
+    }
+    .contenedorGalerias{
+        margin-top: 10px;
+    }
+    .encabezado{
+        gap: 90px;
+    }
+    .encabezado h3{
+        font-size: 24px;
+    }
+    .contenedor{
+        width: 90%;
+    }
+    .contenedorFooter{
+        display:flex;
+        justify-content: center;
+        background-color: #EAF2FD;
+        margin-bottom: 32px;
+        padding: 50px;
+    }
+    .contenedor1{
+        display: block;
+    }
+    .textosF{
+        margin: 30px 0px;
+    }
+    .desarrollado{
+        font-size: 18px;
+    }
+    /*Login*/
+
+    .formularioLogin input{
+        width: 260px;
+    }
+    /*Login*/
+    /*Productos*/
+    .contenedorProductos{
+        width: 90%;
+    }
+    .encabezadoTP{
+        gap: 0px;
+    }
+    .encabezadoTP h1{
+        font-size: 28px;
+    }
+    /*Producots*/
+    /*NuevoProducto*/
+    .contenedorNuevoProducto{
+        background-color: #E5E5E5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedorFormularioNuevoProducto{
+        padding: 64px;
+    }
+    .contenedorFormularioNuevoProducto h1{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .contenedorFormularioNuevoProducto form{
+        width: 300px;
+    }
+    #file{
+        width: 200px;
+    }
+    .contenedorFile span{
+        right: 0px;
+        top: 10px;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 426px){
+    .logoBusqueda{
+        gap: 20px;
+    }
+    .busqueda input{
+        width: 200px;
+    }
+    .login{
+        margin-left: 0px;
+    }
+    .contenedorBanner img{
+        max-width: 768px;
+        height: 300px;
+    }
+    .bannerTexto{
+        top: 100px;
+        left: 30px;
+    }
+    .encabezado{
+        width: 90%;
+        gap: 400px;
+    }
+    .contenedor{
+        width: 90%;
+        gap: 20px;
+    }
+    .tarjeta{
+        width: 150px;
+    }
+    .contenedorFooter{
+        padding: 50px 0px;
+    }
+    .contenedor1{
+        width: 90%;
+        gap: 30px;
+    }
+    .textosF{
+        gap: 30px;
+    }
+    .desarrollado{
+        padding: 10px;
+    }
+    /*Principal*/
+        /*Productos*/
+        .contenedorProductos{
+            width: 90%;
+        }
+        .encabezadoTP{
+            gap: 150px;
+        }
+        .encabezadoTP h1{
+            font-size: 28px;
+        }
+}

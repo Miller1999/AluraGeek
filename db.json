@@ -47,6 +47,22 @@
       "Imagen": "assets/Consolas2.png",
       "descripcion": "Play Station 5 de ultima generación",
       "id": "ca5a8de3-39f7-4f3a-83c2-f3d8f3070462"
+    },
+    {
+      "Producto": "GameBoy",
+      "Precio": "120",
+      "Categoria": "Consolas",
+      "Imagen": "assets/Consolas5.png",
+      "descripcion": "Contiene unos juegos además de la consola",
+      "id": "984ed171-3950-4cb5-ac61-1bde64b1d5a9"
+    },
+    {
+      "Producto": "Consola Retro",
+      "Precio": "90",
+      "Categoria": "Consolas",
+      "Imagen": "assets/Consolas6.png",
+      "descripcion": "Consola retro llena de juegos",
+      "id": "5104557f-b479-4f06-88b7-f43457395edb"
     }
   ]
 }
