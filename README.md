@@ -4,7 +4,7 @@
 ***
 # Pagina Web
 
-## [AluraGeek](https://miller1999.github.io/AluraGeek/)
+## [AluraGeek](https://alura-geek-tau.vercel.app/index.html)
 
 ### Escritorio
 ![Escritorio](assets/imagen_2023-05-02_005843599.png)
