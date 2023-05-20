@@ -1,28 +1,12 @@
 {
   "producto": [
     {
-      "Producto": "Taza de StormTrooper",
-      "Precio": "200",
-      "Categoria": "StarWars",
-      "Imagen": "assets/StarWars1.png",
-      "descripcion": "Taza decorativa edición especial de stormtrooper",
-      "id": "58a84867-0359-4ea8-aaf1-21d61d027d63"
-    },
-    {
       "Producto": "Control Switch",
       "Precio": "600",
       "Categoria": "Consolas",
       "Imagen": "assets/Consolas3.png",
       "descripcion": "Control inalámbrico de Switch Rojo/Azul",
       "id": "a36ca92c-9a65-4e8b-be8a-c932b25922b7"
-    },
-    {
-      "Producto": "Poster de Atari",
-      "Precio": "10",
-      "Categoria": "Varios",
-      "Imagen": "assets/Varios1.png",
-      "descripcion": "Poster conmemorativo de atari",
-      "id": "88f7a701-75a4-4537-9955-6483ae3f4563"
     },
     {
       "Producto": "Yoda",
@@ -33,36 +17,20 @@
       "id": "3aa1e1f0-185a-4c27-bd66-8503914bb432"
     },
     {
-      "Producto": "Pikachu Gigante",
-      "Precio": "200",
+      "Producto": "Realidad virtual",
+      "Precio": "5000",
       "Categoria": "Varios",
-      "Imagen": "assets/Varios6.png",
-      "descripcion": "Pikachu tamaño familiar",
-      "id": "fb5f0dd8-1d75-4271-b583-64d645b925f2"
+      "Imagen": "assets/Varios5.png",
+      "descripcion": "Juega en realidad virtual",
+      "id": "2404eae2-2a2f-4e59-bf0f-adb58a5cc84e"
     },
     {
-      "Producto": "Play Station 5",
-      "Precio": "500",
+      "Producto": "Xbox Series X",
+      "Precio": "800",
       "Categoria": "Consolas",
-      "Imagen": "assets/Consolas2.png",
-      "descripcion": "Play Station 5 de ultima generación",
-      "id": "ca5a8de3-39f7-4f3a-83c2-f3d8f3070462"
-    },
-    {
-      "Producto": "GameBoy",
-      "Precio": "120",
-      "Categoria": "Consolas",
-      "Imagen": "assets/Consolas5.png",
-      "descripcion": "Contiene unos juegos además de la consola",
-      "id": "984ed171-3950-4cb5-ac61-1bde64b1d5a9"
-    },
-    {
-      "Producto": "Consola Retro",
-      "Precio": "90",
-      "Categoria": "Consolas",
-      "Imagen": "assets/Consolas6.png",
-      "descripcion": "Consola retro llena de juegos",
-      "id": "5104557f-b479-4f06-88b7-f43457395edb"
+      "Imagen": "assets/Consolas4.png",
+      "descripcion": "Consola de ultima generacion",
+      "id": "481ce98a-8c89-434d-a20f-7d4d4711151f"
     }
   ]
 }

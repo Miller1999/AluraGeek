@@ -74,5 +74,5 @@ function validarBoton(){
 formularioNuevo.addEventListener('submit',(e)=>{
     e.preventDefault()
     // if(camposN.imagen && camposN.nombreProducto && camposN.precio && camposN.descripcion )
-    //     window.location.href = "Admin.html"
+    window.location.href = "Admin.html"
 })
