@@ -39,5 +39,6 @@ export const serviciosProductos = {
     crearProducto,
     eliminarProducto,
     detalleProducto,
-    actualizarProducto
+    actualizarProducto,
+
 }

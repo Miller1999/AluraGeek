@@ -412,6 +412,57 @@ body{
     background-color: #A2A2A2;
 }
 /*Info adicional*/
+.contenedorGrandeInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    background-color: #f5f5f5;
+}
+.imagenInfo{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+}
+.imagenInfo img{
+    width: 500px;
+}
+.textoInfo{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+}
+.textoInfo h1{
+    text-align: center;
+    font-size: 52px;
+    font-weight: 700;
+}
+.textoInfo p:first-of-type{
+    font-size: 32px;
+    font-weight: 700;
+}
+.textoInfo p{
+    font-size: 20px;
+    line-height: 40px;
+}
+.contenedorProRelacionadosG{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+.contenedorProRelacionadosG h1{
+    margin-bottom: 50px;
+    font-size: 52px;
+    font-weight: 700;
+}
+.itemsProducRelacionados{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 /*Responsividad*/
 @media only screen and (max-width: 425px){
     /*Principal*/
@@ -517,6 +568,23 @@ body{
         right: 0px;
         top: 10px;
     }
+    /*Info adicional*/
+    .contenedorGrandeInfo{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .imagenInfo{
+        width: 90vw;
+    }
+    .imagenInfo img{
+        width: 100%;
+    }
+    .textoInfo{
+        width: 85vw;
+    }
+    .contenedorProRelacionadosG{
+        padding: 25px;
+    }
 }
 @media only screen and (max-width: 768px) and (min-width: 426px){
     .logoBusqueda{
@@ -571,4 +639,31 @@ body{
         .encabezadoTP h1{
             font-size: 28px;
         }
+    /*Info adicional*/
+    .contenedorGrandeInfo{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .imagenInfo{
+        width: 90vw;
+    }
+    .imagenInfo img{
+        width: 100%;
+    }
+    .textoInfo{
+        width: 90vw;
+    }
+    .contenedorProRelacionadosG{
+        padding: 25px;
+    }
+    .contenedorProRelacionadosG h1{
+        margin-bottom: 50px;
+        font-size: 52px;
+        font-weight: 700;
+    }
+    .itemsProducRelacionados{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }

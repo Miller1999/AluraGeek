@@ -1,36 +1,52 @@
 {
   "producto": [
     {
-      "Producto": "Control Switch",
-      "Precio": "600",
+      "Producto": "Play Station 5",
+      "Precio": "1000",
       "Categoria": "Consolas",
-      "Imagen": "assets/Consolas3.png",
-      "descripcion": "Control inalámbrico de Switch Rojo/Azul",
-      "id": "a36ca92c-9a65-4e8b-be8a-c932b25922b7"
+      "Imagen": "assets/Consolas2.png",
+      "descripcion": "Experimenta una velocidad sorprendente con una SSD de velocidad ultrarrápida, una inmersión más profunda con soporte para respuesta háptica1, gatillos adaptables y audio 3D, además de una generación completamente nueva de juegos de PlayStation.",
+      "id": "f53a1260-19a8-48fc-8784-fce7ab844e23"
     },
     {
-      "Producto": "Yoda",
-      "Precio": "60",
+      "Producto": "Baby Yoda",
+      "Precio": "20",
       "Categoria": "StarWars",
-      "Imagen": "assets/StarWars3.png",
-      "descripcion": "Lo mas viejo",
-      "id": "3aa1e1f0-185a-4c27-bd66-8503914bb432"
+      "Imagen": "assets/StarWars5.png",
+      "descripcion": "Junto a Mattel, desde hoy los momentos de juego, diversión y descanso ahora estarán más acompañados. No existen límites para disfrutar de este peluche, el cuál será una fuente de tranquilidad para los mas pequeños ayudándolos a desarrollar habilidades sociales, promoviendo su imaginación y creatividad.\n\nDiversión sin alergias\nSu característica hipoalergénica permite que los mas pequeños del hogar puedan jugar por horas junto a su peluche con la tranquilidad de que sus materiales no provocarán ninguna reacción alérgica.",
+      "id": "eefd94ba-e8d4-4fa6-b257-40b6dad6f51c"
     },
     {
-      "Producto": "Realidad virtual",
-      "Precio": "5000",
+      "Producto": "Pikachu",
+      "Precio": "120",
       "Categoria": "Varios",
-      "Imagen": "assets/Varios5.png",
-      "descripcion": "Juega en realidad virtual",
-      "id": "2404eae2-2a2f-4e59-bf0f-adb58a5cc84e"
+      "Imagen": "assets/Varios6.png",
+      "descripcion": "Junto a Pokémon, desde hoy los momentos de juego, diversión y descanso ahora estarán más acompañados. No existen límites para disfrutar de este peluche, el cuál será una fuente de tranquilidad para los mas pequeños ayudándolos a desarrollar habilidades sociales, promoviendo su imaginación y creatividad.",
+      "id": "13f8ec41-71e5-44e5-8ff9-c2bcc0586709"
     },
     {
       "Producto": "Xbox Series X",
-      "Precio": "800",
+      "Precio": "900",
       "Categoria": "Consolas",
       "Imagen": "assets/Consolas4.png",
-      "descripcion": "Consola de ultima generacion",
-      "id": "481ce98a-8c89-434d-a20f-7d4d4711151f"
+      "descripcion": "La tarjeta de expansión de almacenamiento Seagate para Xbox Series X|S se conecta a la parte posterior de la consola a través del puerto de expansión de almacenamiento dedicado y replica la experiencia SSD personalizada de la consola, proporcionando almacenamiento de juegos adicional con el mismo rendimiento. (Se vende por separado, disponible en varios tamaños).",
+      "id": "6c6ed794-850b-4ef9-ba84-e33fd9336385"
+    },
+    {
+      "Producto": "Control Xbox One ",
+      "Precio": "200",
+      "Categoria": "Consolas",
+      "Imagen": "assets/Consolas1.png",
+      "descripcion": "Control preciso\nEste mando combina funciones revolucionarias mientras conserva precisión, comodidad y exactitud en cada movimiento. Gracias a su ergonomía especialmente pensada para la posición de tu mano, puedes pasar horas jugando con total confort.\n\nMayor comodidad y realismo\nTe permite jugar sin necesidad de que haya cables de por medio. Está pensado no solamente para controlar mejor tus videojuegos, sino también para aumentar su realismo y experiencia.\n\nActiva el Bluetooth\nCuenta con conexión Bluetooth de alta tecnología para usarlo en cualquier ordenador o dispositivo; ya no necesitarás de aplicaciones de terceros ni cable USB. Además, posee gran capacidad antiinterferente, fácil manejo y señal de conexión estable.",
+      "id": "ce8546a1-f3c0-47f9-abb5-08d8c106e7e1"
+    },
+    {
+      "Producto": "Control Switch",
+      "Precio": "300",
+      "Categoria": "Consolas",
+      "Imagen": "assets/Consolas3.png",
+      "descripcion": "Control Nintendo Switch Joy-con Neon Red Blue L Y R",
+      "id": "dd2b0c80-1d4c-4127-bce4-a5de8fdb42b1"
     }
   ]
 }

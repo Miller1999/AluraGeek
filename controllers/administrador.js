@@ -19,6 +19,7 @@ const crearNuevoTarjetaA = (imagen,producto,categoria,precio,id) => {
     serviciosProductos.eliminarProducto(id).then((respuesta) => {
     })
     .catch((err) => alert("Ocurrio un error"))
+        window.location.href = "Admin.html"
     })
     return tarjetaA
 }

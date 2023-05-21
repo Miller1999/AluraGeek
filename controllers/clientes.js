@@ -8,7 +8,7 @@ const crearNuevoTarjeta = (imagen,categoria,producto,precio,id) => {
     <p>${categoria}</p>
     <p >${producto}</p>
     <p>$${precio}</p>
-    <a href="productos.html?id=${id}?categoria=${categoria}">Ver producto</a>`
+    <a href="informacionAdicional.html?id=${id}">Ver producto</a>`
     tarjeta.innerHTML = contenido
     return tarjeta
 }
